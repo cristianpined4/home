@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		body,html
+		{
+			background-color: #212121;
+		}
+	</style>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<title>Registro - MobileShop</title>
+</head>
+<body>
+	<p class="z-depth-1">
+	<div class="row">
+		<div class="col s12 m12 l12"> 
+			<span class="blue-text text-darken-1">    		
+        	<nav >
+   					<div class="nav-wrapper light-blue darken-2">
+							<a href="#" data-target="Menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+     					<ul  id="nav-mobile" class="left hide-on-med-and-down" >
+     						<li><img width="170" height="100" class="responsive-img" src="..\Media\Logo\Logo.png"></a></li>
+        				<li><a href="../">Inicia Sesion</a></li>
+      				</ul>
+						</div>
+						<ul class="sidenav" id="Menu">
+							<li><img width="170" height="100" class="responsive-img" src="..\Media\Logo\Logo.png"></a></li>
+							<li><a href="../">Inicia Sesion</a></li>
+						</ul>
+  				</nav>
+  	   		</span>
+        </div>
+		<div class="col s3 hide-on-med-and-down">
+       		<div class="card-panel grey darken-4"></div>
+      		<p class="z-depth-1"></p>
+      	</div>
+    	<div class="col s12 m12 l6">
+      		<div class="card-panel light-blue"></div>
+      		<p class="z-depth-1"></p>
+      		<center style="background-color: #f5f5f5;padding: 2%;">
+            <form class="col s12" >
+              <div class="row">
+                <div class="input-field col s10" style="margin-left: 5%;margin-right: 5%">
+                  <i class="material-icons prefix">account_circle</i>
+                  <input id="email" type="email" class="validate" onkeyup="saltar2(event,'password2')">
+                  <label for="icon_prefix">Usuario</label>
+                </div>
+                <div class="input-field col s10" style="margin-left: 5%;margin-right: 5%">
+                  <i class="material-icons prefix">lock</i>
+                  <input id="password2" type="password" class="validate" onkeyup="saltar2(event,'passwordv')" class="autocomplete">
+                  <label for="icon_telephone">Contraseña</label>
+                </div>
+                <div class="input-field col s10" style="margin-left: 5%;margin-right: 5%">
+                  <i class="material-icons prefix">lock</i>
+                  <input id="passwordv" type="password" class="validate" onkeyup="saltar2(event,'Registro')" class="autocomplete">
+                  <label for="icon_telephone">Verfique La Contraseña</label>
+                </div>
+              </div>
+            </form>
+            <a type="button" id="Registro" onclick="registra()" class="card-panel grey darken-4 btn"><i class="material-icons left">lock_open</i>Registra</a>
+          </center>
+    	</div>
+    	<div class="col s3 hide-on-med-and-down">
+      		<div class="card-panel grey darken-4"></div>
+    	</div>
+  		</div>
+  		<div class="card-panel light-blue"></div>
+  		<div class="card-panel grey darken-4">
+    	<span class="white-text text-darken-2">Copyright © 2018,Cristian Pineda</div>
+  	</div>
+	</P>
+</body>
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+<script src="../Js/Registro.js"></script>
+<script>
+	$(document).ready(function() {
+		M.AutoInit();
+	});
+</script>
+</html>
